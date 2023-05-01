@@ -4,13 +4,14 @@ import Dashboard from './pages/Dashboard';
 import New from './pages/New';
 import Login from './pages/Login';
 import List from './pages/List';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={ <Login/> } />
-        <Route path="home" >
+        <Route path="home" element={<Layout/>}>
           <Route index element={<Dashboard/>}/>
           <Route path="students" >
             <Route index element={<List/>}/>

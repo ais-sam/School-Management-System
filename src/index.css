@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .menu-item {
+    @apply border-b border-[#0c144e] py-2 hover:bg-d-light-blue;
+  }
+  .submenu-item {
+    @apply  py-2 bg-d-blue;
+  }
+}
 
+
+.ps-menu-button:hover{
+  background-color: transparent !important;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
