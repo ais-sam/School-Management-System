@@ -4,13 +4,16 @@
 
 @layer components {
   .menu-item {
-    @apply border-b border-[#0c144e] py-2 hover:bg-d-light-blue;
+    @apply border-b border-[#0c144e] py-2;
   }
   .submenu-item {
     @apply  py-2 bg-d-blue;
   }
 }
 
+/* .menu-item:hover a span {
+  color: #263AC3 !important;
+} */
 
 .ps-menu-button:hover{
   background-color: transparent !important;

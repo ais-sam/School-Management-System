@@ -1,8 +1,7 @@
-import React from 'react'
 
-const List = () => {
+const List = ({type}) => {
   return (
-    <div>List</div>
+    <div className='flex-grow'>{type} List</div>
   )
 }
 

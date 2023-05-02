@@ -1,8 +1,8 @@
 import React from 'react'
 
-const New = () => {
+const New = ({type}) => {
   return (
-    <div>New</div>
+    <div className='flex-grow'>New {type}</div>
   )
 }
 
