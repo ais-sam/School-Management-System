@@ -5,7 +5,7 @@ import New from './pages/New';
 import Login from './pages/Login';
 import List from './pages/List';
 import Settings from './pages/Settings';
-import Layout from './components/Layout';
+import Layout from './components/global/Layout';
 
 function App() {
   return (
