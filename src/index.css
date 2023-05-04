@@ -11,6 +11,16 @@
   }
 }
 
+.title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
+  width: 30px;
+  height: 3px;
+  background-color: #D60A0B;
+}
+
 /* .menu-item:hover a span {
   color: #263AC3 !important;
 } */
