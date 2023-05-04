@@ -1,17 +1,19 @@
 import { Avatar, Dropdown, Navbar } from 'flowbite-react'
 import { SlEnvolope } from 'react-icons/sl';
 import { FaRegBell } from 'react-icons/fa';
+import { HiOutlineSearch } from "react-icons/hi";
 
 
 const TopBar = () => {
   return (
-    <Navbar fluid={true} rounded={true} className=' shadow-md'>
-        <div>
-            <input type="text" placeholder="Search" className='border-none' />
+    <Navbar fluid={true} rounded={false} className='  rounded-none'>
+        <div className='flex items-center'>
+          <HiOutlineSearch className='text-lg'/>
+            <input type="text" placeholder="Search"  className='border-none focus:outline-none' />
         </div>
       <div className="flex md:order-2 items-center gap-2">
-        <FaRegBell className='text-xl'/>
-        <SlEnvolope className='text-xl'/>
+        <SlEnvolope className='text-lg'/>
+        <FaRegBell className='text-lg'/>
         <span>|</span>
         <Dropdown
           arrowIcon={false}
@@ -36,7 +38,6 @@ const TopBar = () => {
           <Dropdown.Divider />
           <Dropdown.Item>Sign out</Dropdown.Item>
         </Dropdown>
-        <Navbar.Toggle />
       </div>
     </Navbar>
 
