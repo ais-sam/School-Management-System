@@ -9,6 +9,9 @@
   .submenu-item {
     @apply  py-2 bg-d-blue;
   }
+  .table_item{
+    @apply px-6 py-4 font-normal text-gray-900 whitespace-nowrap dark:text-white;
+  }
 }
 
 .title::after{
@@ -20,6 +23,13 @@
   height: 3px;
   background-color: #D60A0B;
 }
+
+th{
+  font-weight:500;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
 
 /* .menu-item:hover a span {
   color: #263AC3 !important;

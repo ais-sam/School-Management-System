@@ -1,6 +1,7 @@
 import BreadCrumb from "../components/global/BreadCrumb"
 import PageTitle from "../components/global/PageTitle"
 import SearchBar from "../components/global/SearchBar";
+import Table from "../components/global/Table";
 const List = ({type}) => {
   return (
     <div className="text-left">
@@ -12,7 +13,10 @@ const List = ({type}) => {
           All <span>{type}</span> Data
         </h3>
         <SearchBar/>
-        {type} List
+        <div>
+          <Table/>
+        </div>
+
       </div>
     </div>
   );
