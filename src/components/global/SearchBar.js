@@ -15,7 +15,7 @@ const SearchBar = () => {
             </select>
           </div>
 
-          <button className="bg-d-red py-2 px-6 text-white w-52 h-11 rounded-sm uppercase">search</button>
+          <button className="bg-d-red py-2 px-6 text-white w-52 h-10 text-sm rounded-sm uppercase">search</button>
         </div>
   )
 }

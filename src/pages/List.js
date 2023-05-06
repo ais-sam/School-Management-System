@@ -13,7 +13,7 @@ const List = ({type}) => {
           All <span>{type}</span> Data
         </h3>
         <SearchBar/>
-        <div>
+        <div className="mt-3">
           <Table/>
         </div>
 
