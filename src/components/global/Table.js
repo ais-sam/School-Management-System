@@ -173,7 +173,7 @@ export default function DataTable ({type}){
 return (
   <div>
     <Table className="mt-5">
-      <TableHead>
+      <TableHead className='border-b'>
         <TableRow>
           {headerCells.map(el=><TableHeaderCell key={el} className='text-d-red text-base font-medium '>{el}</TableHeaderCell>)}
         </TableRow>

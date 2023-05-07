@@ -8,8 +8,9 @@ import {SelectBox,SelectBoxItem, Button} from "@tremor/react";
 import StudentData from "../components/New/StudentData";
 import ParentData from "../components/New/ParentData";
 import Buttons from "../components/New/Buttons";
-import StudentImage from "../components/New/StudentImage";
+import ImageInput from "../components/New/ImageInput";
 import { Modal } from "flowbite-react";
+import TeachersData from "../components/New/TeachersData";
 
 
 const New = ({type}) => {
@@ -18,13 +19,20 @@ const New = ({type}) => {
       <PageTitle title={type} />
       <BreadCrumb />
 
-      <div className="bg-white rounded-sm shadow-sm p-5 mt-6">
+      <div className="bg-white rounded-sm shadow-sm p-5 mt-8">
         <form>
-          <StudentData />
-          <ParentData />
-          <StudentImage />
-          <Buttons />
-          
+          {type === "students" ? (
+          <>
+            <StudentData />
+            <ParentData />
+            <ImageInput />
+            <Buttons />
+          </>) : 
+          <>
+          <TeachersData/>
+          <ImageInput/>
+          <Buttons/>
+          </>}
         </form>
       </div>
     </div>

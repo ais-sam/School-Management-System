@@ -1,3 +1,4 @@
+import SubjectData from "../components/New/SubjectData";
 import DetailsCard from "../components/details/DetailsCard";
 import BreadCrumb from "../components/global/BreadCrumb"
 import PageTitle from "../components/global/PageTitle"
@@ -11,7 +12,7 @@ const List = ({type}) => {
       <PageTitle title={type} />
       <BreadCrumb />
 
-      <div className="bg-white rounded-sm shadow-sm p-4 mt-6">
+      <div className="bg-white rounded-sm shadow-sm p-4 mt-8">
         <h3 className="capitalize text-2xl">
           All <span>{type}</span> {type !== "subjects" && 'Data'}
         </h3>
@@ -21,6 +22,7 @@ const List = ({type}) => {
         </div>
         
       </div>
+        {type === "subjects" && <SubjectData/>}
     </div>
   );
 }

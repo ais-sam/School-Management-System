@@ -18,8 +18,8 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 30px;
-  width: 40px;
+  top: 35px;
+  width: 45px;
   height: 3px;
   background-color: #D60A0B;
 }
@@ -30,14 +30,25 @@ th{
   text-transform: capitalize;
 }
 
-
+/* .tremor-SelectBox-root{
+  background-color: #dddeee7c;
+  font-weight: 500;
+} */
 /* .menu-item:hover a span {
   color: #263AC3 !important;
 } */
 
+.tremor-SelectBox-root{
+  border-radius: 2px !important;
+}
 .ps-menu-button:hover{
   background-color: transparent !important;
 }
+
+label{
+  font-size: 15px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
