@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex">
     <SideBar/>
-    <div className="border bg-d-bg-gray flex-grow ">
+    <div className="border bg-d-bg-gray flex-grow overflow-x-scroll">
       <TopBar/>
       <div className="px-4 pt-8 pb-2">
         <Outlet/>

@@ -1,7 +1,10 @@
+import DetailsCard from "../components/details/DetailsCard";
 import BreadCrumb from "../components/global/BreadCrumb"
 import PageTitle from "../components/global/PageTitle"
 import SearchBar from "../components/global/SearchBar";
 import Table from "../components/global/Table";
+
+
 const List = ({type}) => {
   return (
     <div className="text-left">
@@ -16,7 +19,7 @@ const List = ({type}) => {
         <div className="mt-3">
           <Table/>
         </div>
-
+        
       </div>
     </div>
   );

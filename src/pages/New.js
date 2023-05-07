@@ -9,24 +9,25 @@ import StudentData from "../components/New/StudentData";
 import ParentData from "../components/New/ParentData";
 import Buttons from "../components/New/Buttons";
 import StudentImage from "../components/New/StudentImage";
+import { Modal } from "flowbite-react";
 
 
 const New = ({type}) => {
   return (
     <div className="text-left">
-      <PageTitle title={type}  />
+      <PageTitle title={type} />
       <BreadCrumb />
 
       <div className="bg-white rounded-sm shadow-sm p-5 mt-6">
         <form>
-          <StudentData/>
-          <ParentData/>
-          <StudentImage/>
-          <Buttons/>
+          <StudentData />
+          <ParentData />
+          <StudentImage />
+          <Buttons />
+          
         </form>
       </div>
-      </div>
-    
+    </div>
   );
 }
 
