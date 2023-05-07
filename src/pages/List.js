@@ -13,11 +13,11 @@ const List = ({type}) => {
 
       <div className="bg-white rounded-sm shadow-sm p-4 mt-6">
         <h3 className="capitalize text-2xl">
-          All <span>{type}</span> Data
+          All <span>{type}</span> {type !== "subjects" && 'Data'}
         </h3>
-        <SearchBar/>
+        <SearchBar type={type}/>
         <div className="mt-3">
-          <Table/>
+          <Table type={type}/>
         </div>
         
       </div>
