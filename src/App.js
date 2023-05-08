@@ -24,7 +24,7 @@ function App() {
             <Route path='new' element={<New type="teachers"/>}/>
           </Route>
         <Route path="subjects" element={ <List type="subjects"/> } />
-        <Route path="settings" element={ <Settings/> } />
+        <Route path="settings" element={ <Settings type="settings"/> } />
         </Route>
       </Routes>
     </div>
